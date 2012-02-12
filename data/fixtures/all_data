@@ -1,0 +1,718 @@
+EstadoDeObra:
+  EstadoDeObra_1:
+    estado_de_obra: Proyecto
+    descripcion: "Son las obras que cuentan con proyecto ejecutivo, significan que cuentan con toda la documentación requerida para ser licitadas. El estado de proyecto de una obra no se refiere a ideas preliminares ni a una intención política de realizarla, por el contrario cuando una obra se encuentra en este estado significa que ha superado la instancias de factibilidades técnicas y legales, y tiene todos los distintos aspectos de obras resueltas de manera gráfica(planos, detalles, etc.) y escritas (especificaciones técnicas, memoria descriptiva, etc.).\n"
+  EstadoDeObra_2:
+    estado_de_obra: 'En proceso de licitación'
+    descripcion: "Este estado es más administrativo, durante este proceso se prepara toda la documentación legal que completa el proyecto ejecutivo (pliego de especificaciones generales y particulares), se puede llamar a licitación, concurso de precios, etc.. Se piden las garantías y seguros requeridos a las empresas para poder adjudicarlas.\n"
+  EstadoDeObra_3:
+    estado_de_obra: Adjudicada
+    descripcion: "En este estado se encuentra la obra que ya se sabe quien va a hacerla. A veces el inicio de la obra no es inmediata a su adjudicación y podría tardar, inclusive, varios meses, porque, puede ser que en el pliego del llamado a concurso se haya especificado alguna fecha en especial para iniciarla o que pueda estar sujeta a alguna acción de parte de el Ministerio (anticipo, etc.).\n"
+  EstadoDeObra_4:
+    estado_de_obra: 'En ejecución'
+    descripcion: "Este estado es para las obras que se estan realizando con ritmo normal de avance, o sea, que responde a los tiempos pautados (Ej. Plan de avance, cronograma de inversiones, etc.).\n"
+  EstadoDeObra_5:
+    estado_de_obra: Paralizada
+    descripcion: "Este estado de obra es cuando por alguna razón se decidió no seguir dando continuidad a la ejecución, puede ser por parte de la empresa o del Ministerio. Las razones pueden ser varias y estar referidos a falta de cumplimiento de contratos o imprevistos surgidos en obra.\n"
+  EstadoDeObra_6:
+    estado_de_obra: Terminada
+    descripcion: "Cuando la obra se encuentra ejecutada en su totalidad.\n"
+  EstadoDeObra_7:
+    estado_de_obra: Entregada
+    descripcion: "Este estado se produce cuando la obra esta terminada en su totalidad y lista para funcionar. Puede ocurrir que una obra está terminada pero puede requerir alguna obra extra complementaria, que no se tuvo en cuenta en el proyecto, o que, se deba a algún imprevisto surgido durante su ejecución, esto puede retrasar el proceso entre terminada y entregada, porque si bien esta lista no puede funcionar por alguna razón.\n"
+  EstadoDeObra_8:
+    estado_de_obra: Proyecto
+    descripcion: "Son las obras que cuentan con proyecto ejecutivo, significan que cuentan con toda la documentación requerida para ser licitadas. El estado de proyecto de una obra no se refiere a ideas preliminares ni a una intención política de realizarla, por el contrario cuando una obra se encuentra en este estado significa que ha superado la instancias de factibilidades técnicas y legales, y tiene todos los distintos aspectos de obras resueltas de manera gráfica(planos, detalles, etc.) y escritas (especificaciones técnicas, memoria descriptiva, etc.).\n"
+  EstadoDeObra_9:
+    estado_de_obra: 'En proceso de licitación'
+    descripcion: "Este estado es más administrativo, durante este proceso se prepara toda la documentación legal que completa el proyecto ejecutivo (pliego de especificaciones generales y particulares), se puede llamar a licitación, concurso de precios, etc.. Se piden las garantías y seguros requeridos a las empresas para poder adjudicarlas.\n"
+  EstadoDeObra_10:
+    estado_de_obra: Adjudicada
+    descripcion: "En este estado se encuentra la obra que ya se sabe quien va a hacerla. A veces el inicio de la obra no es inmediata a su adjudicación y podría tardar, inclusive, varios meses, porque, puede ser que en el pliego del llamado a concurso se haya especificado alguna fecha en especial para iniciarla o que pueda estar sujeta a alguna acción de parte de el Ministerio (anticipo, etc.).\n"
+  EstadoDeObra_11:
+    estado_de_obra: 'En ejecución'
+    descripcion: "Este estado es para las obras que se estan realizando con ritmo normal de avance, o sea, que responde a los tiempos pautados (Ej. Plan de avance, cronograma de inversiones, etc.).\n"
+  EstadoDeObra_12:
+    estado_de_obra: Paralizada
+    descripcion: "Este estado de obra es cuando por alguna razón se decidió no seguir dando continuidad a la ejecución, puede ser por parte de la empresa o del Ministerio. Las razones pueden ser varias y estar referidos a falta de cumplimiento de contratos o imprevistos surgidos en obra.\n"
+  EstadoDeObra_13:
+    estado_de_obra: Terminada
+    descripcion: "Cuando la obra se encuentra ejecutada en su totalidad.\n"
+  EstadoDeObra_14:
+    estado_de_obra: Entregada
+    descripcion: "Este estado se produce cuando la obra esta terminada en su totalidad y lista para funcionar. Puede ocurrir que una obra está terminada pero puede requerir alguna obra extra complementaria, que no se tuvo en cuenta en el proyecto, o que, se deba a algún imprevisto surgido durante su ejecución, esto puede retrasar el proceso entre terminada y entregada, porque si bien esta lista no puede funcionar por alguna razón.\n"
+TipoDeObra:
+  TipoDeObra_1:
+    tipo_de_obra: Vial
+    descripcion: adsadsasd
+  TipoDeObra_2:
+    tipo_de_obra: Construcción
+    descripcion: asdasd
+  TipoDeObra_3:
+    tipo_de_obra: Pluvial
+    descripcion: ufyuf
+  TipoDeObra_4:
+    tipo_de_obra: dqweqwe
+    descripcion: qwewqe
+Provincia:
+  Provincia_1:
+    provincia: Chaco
+    descripcion: asdasdasdas
+Programa:
+  Programa_1:
+    programa: testprog9
+    descripcion: asdas
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+  Programa_2:
+    programa: testprog10
+    descripcion: asdsddsdsd
+    FuenteFinanciamiento: FuenteFinanciamiento_2
+Organismo:
+  Organismo_1:
+    organismo: A.P.A
+    descripcion: asdsadsadas
+    created_at: '2011-10-06 11:21:41'
+    updated_at: '2011-10-14 11:11:38'
+  Organismo_2:
+    organismo: testOrganismo
+    descripcion: null
+    created_at: '2011-12-11 16:27:38'
+    updated_at: '2011-12-11 16:27:38'
+  Organismo_3:
+    organismo: testOrganismo
+    descripcion: null
+    created_at: '2011-12-11 16:50:49'
+    updated_at: '2011-12-11 16:50:49'
+  Organismo_4:
+    organismo: testOrganismo3
+    descripcion: null
+    created_at: '2011-12-11 16:53:00'
+    updated_at: '2011-12-11 16:53:00'
+  Organismo_5:
+    organismo: testOraganismo4
+    descripcion: asaaasdssa
+    created_at: '2011-12-11 17:32:36'
+    updated_at: '2011-12-11 17:32:36'
+  Organismo_6:
+    organismo: testOrganismo6
+    descripcion: asdasdasdslkamdasklmdklasdlkasdklasndlkanslasknsdlsd
+    created_at: '2011-12-11 17:36:10'
+    updated_at: '2011-12-11 17:36:10'
+  Organismo_7:
+    organismo: testOrganismo7
+    descripcion: asdassddasdsasdasdasdasdssaddsasadsddasssad
+    created_at: '2011-12-11 17:53:32'
+    updated_at: '2011-12-11 17:53:32'
+  Organismo_8:
+    organismo: testOrganismo8
+    descripcion: asdasdasd
+    created_at: '2012-02-06 10:40:13'
+    updated_at: '2012-02-06 10:40:13'
+  Organismo_9:
+    organismo: testOrganismo9
+    descripcion: asdasd
+    created_at: '2012-02-06 11:01:52'
+    updated_at: '2012-02-06 11:01:52'
+Udt:
+  Udt_1:
+    Region: Region_1
+    numero: '12'
+    descripcion: asdsadsa
+  Udt_2:
+    Region: Region_1
+    numero: '3'
+    descripcion: asdsadsad
+LineaObra:
+  LineaObra_1:
+    Obra: Obra_1
+    ubicacion: exacto
+    descripcion: ''
+    costo_tramo: null
+  LineaObra_2:
+    Obra: Obra_2
+    ubicacion: exacto
+    Municipio: Municipio_1
+    descripcion: ''
+    costo_tramo: null
+  LineaObra_3:
+    Obra: Obra_2
+    ubicacion: exacto
+    Municipio: Municipio_2
+    descripcion: ''
+    costo_tramo: null
+  LineaObra_4:
+    Obra: Obra_2
+    ubicacion: exacto
+    Municipio: Municipio_3
+    descripcion: ''
+    costo_tramo: null
+  LineaObra_5:
+    Obra: Obra_3
+    ubicacion: exacto
+    Municipio: Municipio_1
+    descripcion: ''
+    costo_tramo: null
+  LineaObra_6:
+    Obra: Obra_4
+    ubicacion: exacto
+    Municipio: Municipio_2
+    Udt: Udt_1
+    descripcion: adsdsadsa
+    costo_tramo: '3.56'
+  LineaObra_7:
+    Obra: Obra_5
+    ubicacion: exacto
+    Municipio: Municipio_2
+    Udt: Udt_2
+    descripcion: asdds
+    costo_tramo: '3.56'
+  LineaObra_8:
+    Obra: Obra_5
+    ubicacion: exacto
+    Municipio: Municipio_3
+    descripcion: sadsad
+    costo_tramo: '25'
+  LineaObra_9:
+    Obra: Obra_6
+    ubicacion: exacto
+    Municipio: Municipio_2
+    Udt: Udt_1
+    descripcion: adsdsadsa
+    costo_tramo: '3.56'
+  LineaObra_10:
+    Obra: Obra_6
+    ubicacion: de_referencia
+    Municipio: Municipio_3
+    Udt: Udt_2
+    descripcion: diego
+    costo_tramo: '32'
+  LineaObra_11:
+    Obra: Obra_7
+    ubicacion: exacto
+    Municipio: Municipio_1
+    Udt: Udt_1
+    descripcion: adsdsadsa
+    costo_tramo: '3.56'
+  LineaObra_12:
+    Obra: Obra_8
+    ubicacion: exacto
+    Municipio: Municipio_1
+    Udt: Udt_1
+    descripcion: asdas
+    costo_tramo: '3.56'
+  LineaObra_13:
+    Obra: Obra_8
+    ubicacion: exacto
+    Municipio: Municipio_2
+    Udt: Udt_1
+    descripcion: diego
+    costo_tramo: '32'
+  LineaObra_14:
+    Obra: Obra_9
+    ubicacion: exacto
+    Municipio: Municipio_2
+    Udt: Udt_1
+    descripcion: asdasd
+    costo_tramo: '556.6669'
+  LineaObra_15:
+    Obra: Obra_10
+    ubicacion: exacto
+    Municipio: Municipio_1
+    Udt: Udt_1
+    descripcion: Dasdasdsad
+    costo_tramo: '23.3'
+  LineaObra_16:
+    Obra: Obra_10
+    ubicacion: exacto
+    Municipio: Municipio_3
+    Udt: Udt_2
+    descripcion: sadasdd
+    costo_tramo: '23.23'
+  LineaObra_17:
+    Obra: Obra_11
+    ubicacion: exacto
+    Municipio: Municipio_1
+    Udt: Udt_1
+    descripcion: asdsad
+    costo_tramo: '23.999'
+  LineaObra_18:
+    Obra: Obra_11
+    ubicacion: exacto
+    Municipio: Municipio_3
+    Udt: Udt_2
+    descripcion: sdsa559s
+    costo_tramo: '5484.65'
+  LineaObra_19:
+    Obra: Obra_11
+    ubicacion: exacto
+    Municipio: Municipio_2
+    Udt: Udt_1
+    descripcion: sadsd5a46
+    costo_tramo: '1215.39'
+  LineaObra_20:
+    Obra: Obra_12
+    ubicacion: exacto
+    Municipio: Municipio_1
+    Udt: Udt_1
+    descripcion: asdasd
+    costo_tramo: '123.36'
+  LineaObra_21:
+    Obra: Obra_12
+    ubicacion: exacto
+    Municipio: Municipio_2
+    Udt: Udt_1
+    descripcion: sdasdads
+    costo_tramo: '4654.23'
+  LineaObra_22:
+    Obra: Obra_13
+    ubicacion: exacto
+    Municipio: Municipio_1
+    Udt: Udt_1
+    descripcion: adsdsadsa
+    costo_tramo: '123.36'
+  LineaObra_23:
+    Obra: Obra_13
+    ubicacion: exacto
+    Municipio: Municipio_3
+    Udt: Udt_2
+    descripcion: diego
+    costo_tramo: '25'
+  LineaObra_24:
+    Obra: Obra_14
+    ubicacion: exacto
+    Municipio: Municipio_1
+    Udt: Udt_1
+    descripcion: ''
+    costo_tramo: '1365.3'
+  LineaObra_25:
+    Obra: Obra_15
+    ubicacion: exacto
+    Municipio: Municipio_1
+    descripcion: 'asdsa '
+    costo_tramo: '125'
+Region:
+  Region_1:
+    region: Impenetrable
+    descripcion: asfasdsadsasd
+Departamento:
+  Departamento_1:
+    Provincia: Provincia_1
+    departamento: 'Almirante Brown'
+    descripcion: asdasdsasdsad
+  Departamento_2:
+    Provincia: Provincia_1
+    departamento: 'General Donovan'
+    descripcion: asdsadsadssad
+Obra:
+  Obra_1:
+    Organismo: Organismo_7
+    nombre_obra: ''
+    detalle_obra: ''
+    cantidad: null
+    presupuesto_oficial: null
+    monto_contrato: null
+    fecha_inicio: null
+    fecha_fin: null
+    plazo_ejecucion: ''
+    created_at: '2011-12-11 18:02:37'
+    updated_at: '2011-12-11 18:02:37'
+  Obra_2:
+    TipoDeObra: TipoDeObra_1
+    EstadoDeObra: EstadoDeObra_2
+    nombre_obra: sadsad
+    detalle_obra: ''
+    cantidad: null
+    presupuesto_oficial: null
+    monto_contrato: null
+    fecha_inicio: null
+    fecha_fin: null
+    plazo_ejecucion: ''
+    created_at: '2011-12-20 11:28:34'
+    updated_at: '2011-12-20 11:28:34'
+  Obra_3:
+    TipoDeObra: TipoDeObra_1
+    nombre_obra: sadsad
+    detalle_obra: ''
+    cantidad: null
+    presupuesto_oficial: null
+    monto_contrato: null
+    fecha_inicio: null
+    fecha_fin: null
+    plazo_ejecucion: ''
+    created_at: '2011-12-20 12:15:52'
+    updated_at: '2011-12-20 12:15:52'
+  Obra_4:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_1
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_1
+    EstadoDeObra: EstadoDeObra_2
+    Empresa: Empresa_2
+    nombre_obra: sadsad
+    detalle_obra: asdsadsad
+    cantidad: null
+    presupuesto_oficial: null
+    monto_contrato: '3.56'
+    fecha_inicio: '2012-02-06'
+    fecha_fin: null
+    plazo_ejecucion: ''
+    created_at: '2012-02-06 11:50:35'
+    updated_at: '2012-02-06 11:50:35'
+  Obra_5:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_1
+    Organismo: Organismo_4
+    TipoDeObra: TipoDeObra_1
+    EstadoDeObra: EstadoDeObra_4
+    Empresa: Empresa_2
+    nombre_obra: asdsa
+    detalle_obra: asdsadsad
+    cantidad: null
+    presupuesto_oficial: '123213'
+    monto_contrato: '28.56'
+    fecha_inicio: '2012-02-01'
+    fecha_fin: '2012-02-08'
+    plazo_ejecucion: asdsaddsa
+    created_at: '2012-02-06 11:57:29'
+    updated_at: '2012-02-06 11:57:29'
+  Obra_6:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_1
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_2
+    EstadoDeObra: EstadoDeObra_2
+    Empresa: Empresa_1
+    nombre_obra: '1232'
+    detalle_obra: asdsadsad
+    cantidad: null
+    presupuesto_oficial: null
+    monto_contrato: '35.56'
+    fecha_inicio: '2012-02-17'
+    fecha_fin: '2012-02-07'
+    plazo_ejecucion: '123'
+    created_at: '2012-02-06 12:02:57'
+    updated_at: '2012-02-06 12:02:57'
+  Obra_7:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_1
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_1
+    EstadoDeObra: EstadoDeObra_2
+    Empresa: Empresa_1
+    nombre_obra: sadsad
+    detalle_obra: asdsadsad
+    cantidad: null
+    presupuesto_oficial: '232342.4'
+    monto_contrato: '3.56'
+    fecha_inicio: '2012-02-06'
+    fecha_fin: '2012-02-14'
+    plazo_ejecucion: asdassd
+    created_at: '2012-02-06 12:06:49'
+    updated_at: '2012-02-06 12:06:49'
+  Obra_8:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_1
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_1
+    EstadoDeObra: EstadoDeObra_3
+    Empresa: Empresa_1
+    nombre_obra: sadsad
+    detalle_obra: asdsadsad
+    cantidad: null
+    presupuesto_oficial: '123213'
+    monto_contrato: '35.56'
+    fecha_inicio: '2012-02-06'
+    fecha_fin: '2012-02-07'
+    plazo_ejecucion: asdassd
+    created_at: '2012-02-06 12:19:39'
+    updated_at: '2012-02-06 12:19:39'
+  Obra_9:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_1
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_1
+    EstadoDeObra: EstadoDeObra_14
+    Empresa: Empresa_1
+    nombre_obra: sd
+    detalle_obra: asdsa
+    cantidad: null
+    presupuesto_oficial: null
+    monto_contrato: '556.67'
+    fecha_inicio: null
+    fecha_fin: null
+    plazo_ejecucion: ''
+    created_at: '2012-02-09 13:39:12'
+    updated_at: '2012-02-09 13:39:12'
+  Obra_10:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_1
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_2
+    EstadoDeObra: EstadoDeObra_1
+    Empresa: Empresa_1
+    nombre_obra: adasd
+    detalle_obra: sadasdsa
+    cantidad: null
+    presupuesto_oficial: '12123.2123'
+    monto_contrato: '46.53'
+    fecha_inicio: '2012-02-09'
+    fecha_fin: '2012-02-10'
+    plazo_ejecucion: ''
+    created_at: '2012-02-09 17:32:54'
+    updated_at: '2012-02-09 17:32:54'
+  Obra_11:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_2
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_1
+    EstadoDeObra: EstadoDeObra_1
+    Empresa: Empresa_1
+    nombre_obra: asd
+    detalle_obra: asdas
+    cantidad: null
+    presupuesto_oficial: null
+    monto_contrato: '6724.04'
+    fecha_inicio: null
+    fecha_fin: null
+    plazo_ejecucion: ''
+    created_at: '2012-02-09 20:50:27'
+    updated_at: '2012-02-09 20:50:27'
+  Obra_12:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_2
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_4
+    EstadoDeObra: EstadoDeObra_1
+    Empresa: Empresa_1
+    nombre_obra: asdasd
+    detalle_obra: qwe
+    cantidad: null
+    presupuesto_oficial: '12316.36'
+    monto_contrato: '4777.59'
+    fecha_inicio: '2012-02-08'
+    fecha_fin: '2012-02-09'
+    plazo_ejecucion: asdad
+    created_at: '2012-02-09 22:48:51'
+    updated_at: '2012-02-09 22:48:51'
+  Obra_13:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_1
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_1
+    EstadoDeObra: EstadoDeObra_1
+    Empresa: Empresa_1
+    nombre_obra: asd
+    detalle_obra: asdsadsad
+    cantidad: null
+    presupuesto_oficial: '122121'
+    monto_contrato: '148.36'
+    fecha_inicio: '2012-02-08'
+    fecha_fin: '2012-02-13'
+    plazo_ejecucion: '123'
+    created_at: '2012-02-09 22:51:18'
+    updated_at: '2012-02-09 22:51:18'
+  Obra_14:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_1
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_1
+    EstadoDeObra: EstadoDeObra_1
+    Empresa: Empresa_1
+    nombre_obra: sadsad
+    detalle_obra: asdsadsad
+    cantidad: null
+    presupuesto_oficial: '13545.36'
+    monto_contrato: '1365.3'
+    fecha_inicio: '2012-02-07'
+    fecha_fin: '2012-02-06'
+    plazo_ejecucion: asdassd
+    created_at: '2012-02-09 23:10:41'
+    updated_at: '2012-02-09 23:10:41'
+  Obra_15:
+    FuenteFinanciamiento: FuenteFinanciamiento_1
+    Programa: Programa_1
+    Organismo: Organismo_1
+    TipoDeObra: TipoDeObra_1
+    EstadoDeObra: EstadoDeObra_2
+    Empresa: Empresa_1
+    nombre_obra: asdas
+    detalle_obra: sadsad
+    cantidad: null
+    presupuesto_oficial: null
+    monto_contrato: '125'
+    fecha_inicio: null
+    fecha_fin: null
+    plazo_ejecucion: ''
+    created_at: '2012-02-10 09:08:09'
+    updated_at: '2012-02-10 09:08:09'
+Municipio:
+  Municipio_1:
+    Departamento: Departamento_1
+    Udt: Udt_1
+    municipio: Barranqueras
+    descripcion: asdassdasdsadd
+  Municipio_2:
+    Departamento: Departamento_1
+    Udt: Udt_1
+    municipio: Charata
+    descripcion: asdasdsasd
+  Municipio_3:
+    Departamento: Departamento_1
+    Udt: Udt_2
+    municipio: Fontana
+    descripcion: asdsadasd
+sfGuardPermission:
+  sfGuardPermission_1:
+    name: admin
+    description: 'Administrator permission'
+    created_at: '2012-02-01 08:03:59'
+    updated_at: '2012-02-01 08:03:59'
+  sfGuardPermission_2:
+    name: general_admin
+    description: 'Administrador General del Sistema'
+    created_at: '2012-02-10 11:16:18'
+    updated_at: '2012-02-10 11:16:18'
+  sfGuardPermission_3:
+    name: data_entry
+    description: asdasdasd
+    created_at: '2012-02-10 11:34:20'
+    updated_at: '2012-02-10 11:34:20'
+sfGuardUserGroup:
+  sfGuardUserGroup_1_1:
+    User: sfGuardUser_1
+    Group: sfGuardGroup_1
+    created_at: '2012-02-01 08:03:59'
+    updated_at: '2012-02-01 08:03:59'
+  sfGuardUserGroup_1_2:
+    User: sfGuardUser_1
+    Group: sfGuardGroup_2
+    created_at: '2012-02-10 11:18:07'
+    updated_at: '2012-02-10 11:18:07'
+  sfGuardUserGroup_2_3:
+    User: sfGuardUser_2
+    Group: sfGuardGroup_3
+    created_at: '2012-02-10 11:33:35'
+    updated_at: '2012-02-10 11:33:35'
+sfGuardGroupPermission:
+  sfGuardGroupPermission_1_1:
+    Group: sfGuardGroup_1
+    Permission: sfGuardPermission_1
+    created_at: '2012-02-01 08:03:59'
+    updated_at: '2012-02-01 08:03:59'
+  sfGuardGroupPermission_1_2:
+    Group: sfGuardGroup_1
+    Permission: sfGuardPermission_2
+    created_at: '2012-02-10 11:16:18'
+    updated_at: '2012-02-10 11:16:18'
+  sfGuardGroupPermission_2_1:
+    Group: sfGuardGroup_2
+    Permission: sfGuardPermission_1
+    created_at: '2012-02-10 11:18:07'
+    updated_at: '2012-02-10 11:18:07'
+  sfGuardGroupPermission_2_2:
+    Group: sfGuardGroup_2
+    Permission: sfGuardPermission_2
+    created_at: '2012-02-10 11:18:07'
+    updated_at: '2012-02-10 11:18:07'
+  sfGuardGroupPermission_3_3:
+    Group: sfGuardGroup_3
+    Permission: sfGuardPermission_3
+    created_at: '2012-02-10 11:34:20'
+    updated_at: '2012-02-10 11:34:20'
+sfGuardUser:
+  sfGuardUser_2:
+    first_name: usuario
+    last_name: test
+    email_address: asdsad@asdsa.com
+    username: usuario
+    algorithm: sha1
+    salt: 950897aad10f02f3aeeef4fd4bafaff3
+    password: 0524052ce7c3aab7891eb85749f0893b20cf5925
+    is_active: true
+    is_super_admin: false
+    last_login: '2012-02-10 11:38:12'
+    created_at: '2012-02-10 11:32:03'
+    updated_at: '2012-02-10 11:38:12'
+  sfGuardUser_1:
+    first_name: John
+    last_name: Doe
+    email_address: john.doe@gmail.com
+    username: admin
+    algorithm: sha1
+    salt: 48d8290ad2cbe33af8b8884c8f74675a
+    password: 8172dfb033fd44dfd567af1d29c4f95c911b60aa
+    is_active: true
+    is_super_admin: true
+    last_login: '2012-02-10 12:02:11'
+    created_at: '2012-02-01 08:03:59'
+    updated_at: '2012-02-10 12:02:11'
+sfGuardUserPermission:
+  sfGuardUserPermission_1_2:
+    User: sfGuardUser_1
+    Permission: sfGuardPermission_2
+    created_at: '2012-02-10 11:16:18'
+    updated_at: '2012-02-10 11:16:18'
+  sfGuardUserPermission_2_3:
+    User: sfGuardUser_2
+    Permission: sfGuardPermission_3
+    created_at: '2012-02-10 11:34:28'
+    updated_at: '2012-02-10 11:34:28'
+sfGuardGroup:
+  sfGuardGroup_1:
+    name: admin
+    description: 'Administrator group'
+    created_at: '2012-02-01 08:03:59'
+    updated_at: '2012-02-01 08:03:59'
+  sfGuardGroup_2:
+    name: Administrador
+    description: 'Administrador del Sistema'
+    created_at: '2012-02-10 11:18:07'
+    updated_at: '2012-02-10 11:18:19'
+  sfGuardGroup_3:
+    name: data_entry
+    description: asdsad
+    created_at: '2012-02-10 11:33:35'
+    updated_at: '2012-02-10 11:33:35'
+FuenteFinanciamiento:
+  FuenteFinanciamiento_1:
+    oganismo: TestForm6
+    descripcion: asdsad
+  FuenteFinanciamiento_2:
+    oganismo: TestForm10
+    descripcion: asdasd
+Empresa:
+  Empresa_1:
+    empresa: Cooperativa
+    descripcion: hgjhdjhd
+    direccion: 'fdhgfhg 46'
+    telefono: '5646546'
+    tel_cel: '321564'
+    email: ghdgx@hgfhg.com
+  Empresa_2:
+    empresa: testEmpresa3
+    descripcion: null
+    direccion: asdsasd
+    telefono: '213213'
+    tel_cel: '213213'
+    email: null
+  Empresa_3:
+    empresa: testEmpresa4
+    descripcion: null
+    direccion: adasda
+    telefono: '2123'
+    tel_cel: '2123'
+    email: null
+  Empresa_4:
+    empresa: testEmpresa4
+    descripcion: adasaasaaasdasd
+    direccion: dad
+    telefono: '1212123'
+    tel_cel: '12332132'
+    email: null
+  Empresa_5:
+    empresa: testEmpresa5
+    descripcion: asdasdsad
+    direccion: aasdas
+    telefono: '2123213'
+    tel_cel: '1231232'
+    email: adasd@adsa.com

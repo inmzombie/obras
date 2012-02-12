@@ -1,0 +1,3 @@
+<td colspan="7">
+  <?php echo __('%%nombre_obra%% - %%titulo_tipo_de_obra%% - %%titulo_estado_obra%% - %%presupuesto_oficial%% - %%monto_contrato%% - %%fecha_inicio%% - %%fecha_fin%%', array('%%nombre_obra%%' => $obra->getNombreObra(), '%%titulo_tipo_de_obra%%' => $obra->getTituloTipoDeObra(), '%%titulo_estado_obra%%' => $obra->getTituloEstadoObra(), '%%presupuesto_oficial%%' => $obra->getPresupuestoOficial(), '%%monto_contrato%%' => $obra->getMontoContrato(), '%%fecha_inicio%%' => false !== strtotime($obra->getFechaInicio()) ? format_date($obra->getFechaInicio(), "f") : '&nbsp;', '%%fecha_fin%%' => false !== strtotime($obra->getFechaFin()) ? format_date($obra->getFechaFin(), "f") : '&nbsp;'), 'messages') ?>
+</td>

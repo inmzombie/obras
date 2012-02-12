@@ -1,0 +1,29 @@
+EstadoDeObra:
+  edo_1:
+    estado_de_obra: Proyecto
+    descripcion: |
+      Son las obras que cuentan con proyecto ejecutivo, significan que cuentan con toda la documentación requerida para ser licitadas. El estado de proyecto de una obra no se refiere a ideas preliminares ni a una intención política de realizarla, por el contrario cuando una obra se encuentra en este estado significa que ha superado la instancias de factibilidades técnicas y legales, y tiene todos los distintos aspectos de obras resueltas de manera gráfica(planos, detalles, etc.) y escritas (especificaciones técnicas, memoria descriptiva, etc.).
+  edo_2:
+    estado_de_obra: En proceso de licitación
+    descripcion: |
+      Este estado es más administrativo, durante este proceso se prepara toda la documentación legal que completa el proyecto ejecutivo (pliego de especificaciones generales y particulares), se puede llamar a licitación, concurso de precios, etc.. Se piden las garantías y seguros requeridos a las empresas para poder adjudicarlas.
+  edo_3:
+    estado_de_obra: Adjudicada
+    descripcion: |
+      En este estado se encuentra la obra que ya se sabe quien va a hacerla. A veces el inicio de la obra no es inmediata a su adjudicación y podría tardar, inclusive, varios meses, porque, puede ser que en el pliego del llamado a concurso se haya especificado alguna fecha en especial para iniciarla o que pueda estar sujeta a alguna acción de parte de el Ministerio (anticipo, etc.).
+  edo_4:
+    estado_de_obra: En ejecución
+    descripcion: |
+      Este estado es para las obras que se estan realizando con ritmo normal de avance, o sea, que responde a los tiempos pautados (Ej. Plan de avance, cronograma de inversiones, etc.).
+  edo_5:
+    estado_de_obra: Paralizada
+    descripcion: |
+       Este estado de obra es cuando por alguna razón se decidió no seguir dando continuidad a la ejecución, puede ser por parte de la empresa o del Ministerio. Las razones pueden ser varias y estar referidos a falta de cumplimiento de contratos o imprevistos surgidos en obra.
+  edo_6:
+    estado_de_obra: Terminada
+    descripcion: |
+      Cuando la obra se encuentra ejecutada en su totalidad.
+  edo_7:
+    estado_de_obra: Entregada
+    descripcion: |
+      Este estado se produce cuando la obra esta terminada en su totalidad y lista para funcionar. Puede ocurrir que una obra está terminada pero puede requerir alguna obra extra complementaria, que no se tuvo en cuenta en el proyecto, o que, se deba a algún imprevisto surgido durante su ejecución, esto puede retrasar el proceso entre terminada y entregada, porque si bien esta lista no puede funcionar por alguna razón.

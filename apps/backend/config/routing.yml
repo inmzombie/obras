@@ -1,0 +1,128 @@
+departamento:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Departamento
+    module:               departamento
+    prefix_path:          /departamento
+    column:               id
+    with_wildcard_routes: true
+
+provincia:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Provincia
+    module:               provincia
+    prefix_path:          /provincia
+    column:               id
+    with_wildcard_routes: true
+
+udt:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Udt
+    module:               udt
+    prefix_path:          /udt
+    column:               id
+    with_wildcard_routes: true
+
+region:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Region
+    module:               region
+    prefix_path:          /region
+    column:               id
+    with_wildcard_routes: true
+
+municipio:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Municipio
+    module:               municipio
+    prefix_path:          /municipio
+    column:               id
+    with_wildcard_routes: true
+
+organismo:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Organismo
+    module:               organismo
+    prefix_path:          /organismo
+    column:               id
+    with_wildcard_routes: true
+
+empresa:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Empresa
+    module:               empresa
+    prefix_path:          /empresa
+    column:               id
+    with_wildcard_routes: true
+
+programa:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Programa
+    module:               programa
+    prefix_path:          /programa
+    column:               id
+    with_wildcard_routes: true
+
+fuente_financiamiento:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                FuenteFinanciamiento
+    module:               fuente_financiamiento
+    prefix_path:          /fuente_financiamiento
+    column:               id
+    with_wildcard_routes: true
+
+tipo_de_obra:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                TipoDeObra
+    module:               tipo_de_obra
+    prefix_path:          /tipo_de_obra
+    column:               id
+    with_wildcard_routes: true
+
+obra:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                obra
+    module:               obra
+    prefix_path:          /obra
+    column:               id
+    with_wildcard_routes: true
+#AJAX  Agregar linea
+addLineaobra:
+ url: /addlineaobra
+ param: { module: obra, action: addLineaObra }
+
+#AJAX Autocompletar Municipio en linea de obra
+autocompletermun:
+  url: /autocompletermun
+  param: { module: obra, action: autocompleterMunicipio }
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+#AJAX set UDT por linea de obra
+setudt:
+  url: /setudt
+  param: { module: obra, action: setUdt }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: obra, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

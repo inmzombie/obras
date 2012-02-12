@@ -1,0 +1,137 @@
+#options:
+#  collate: utf8_general_ci
+#  charset: utf8
+#  type: InnoDB
+
+FuenteFinanciamiento:
+  columns:
+    oganismo: { type: varchar(200) }
+    descripcion: { type: text }
+
+  
+Programa:
+  columns:
+    programa: { type: varchar(200)}
+    descripcion: { type: text }
+    fuente_financ_id: { type: integer }
+  relations:
+    FuenteFinanciamiento: { local: fuente_financ_id, foreign: id, foreignAlias: Programas }
+
+Organismo:
+  actAs:
+    Timestampable:
+  columns:
+    organismo: { type: varchar(200) }
+    descripcion: { type: text }
+
+TipoDeObra:
+  columns:
+    tipo_de_obra: { type: varchar(200) }
+    descripcion: { type: text }
+
+EstadoDeObra:
+  columns:
+    estado_de_obra: { type: varchar(200) }
+    descripcion: { type: text }
+
+Empresa:
+  columns:
+    empresa: { type: varchar(200) }
+    descripcion: { type: text }
+    direccion: { type: varchar(200) }
+    telefono: { type: varchar(200) }
+    tel_cel: { type: varchar(200) }
+    email: { type: varchar(200) }
+
+Unidad:
+  columns:
+    unidad: { type: varchar(200) }
+    descripcion: { type: text }
+
+Provincia:
+  columns:
+    provincia: { type: varchar(200) }
+    descripcion: { type: text }
+
+Departamento:
+  columns:
+    provincia_id: { type: integer }
+    departamento: { type: varchar(200) }
+    descripcion: { type: text }
+  relations:
+    Provincia: { local: provincia_id, foreign: id, foreignAlias: Departamentos }
+
+
+Municipio:
+  columns:
+    departamento_id: { type: integer }
+    udt_id: { type: integer, notnull: false }
+    municipio: { type: varchar(200) }
+    descripcion: { type: text }
+  relations:
+    Udt: { local: udt_id, foreign: id, foreignAlias: Municipios }
+    Departamento: { local: departamento_id, foreign: id, foreignAlias: Municipios }
+
+Udt:
+  columns:   
+    region_id: { type: integer }
+    numero: { type: integer }
+    descripcion: { type: text }
+  relations:
+    Region: { local: region_id, foreign: id, foreignAlias: UDTs}
+
+Region:
+  columns:
+    region: { type: varchar(200) }
+    descripcion: { type: text }
+
+Obra:
+  actAs:
+    Timestampable:
+  columns:
+    fuentefinanc_id: { type: integer }
+    programa_id: { type: integer }
+    org_id: { type: integer }
+    tipo_obra_id: { type: integer }
+    estado_obra_id: { type: integer }
+    empresa_id: { type: integer }
+    unidad_id: { type: integer }
+#    municipio_id: {type: integer }
+#    udt_id: { type: integer }
+    nombre_obra: { type: varchar(150) }
+    detalle_obra: { type: text }
+    cantidad: { type: float }
+    presupuesto_oficial: { type: float }
+    monto_contrato: { type: float }
+    fecha_inicio: { type: date }
+    fecha_fin: { type: date }
+    plazo_ejecucion: { type: varchar(150) }
+    organizacion: { type: varchar(150) }
+    creacion: { type:varchar(150) }
+    edicion: { type: varchar(150) }
+    eliminacion: { type: varchar(150) }
+  relations:
+    FuenteFinanciamiento: { local: fuentefinanc_id, foreign: id, foreignAlias: Obras }
+    Programa: { local: programa_id, foreign: id, foreignAlias: Obras }
+    Organismo: { local: org_id, foreign: id, foreignAlias: Obras }
+    TipoDeObra: { local: tipo_obra_id, foreign: id, foreignAlias: Obras }
+    EstadoDeObra: { local: estado_obra_id, foreign: id, foreignAlias: Obras }
+    Empresa: { local: empresa_id, foreign: id, foreignAlias: Obras }
+    Unidad: { local: unidad_id, foreign: id, foreignAlias: Obras }
+#    Municipio: { local: municipio_id, foreign: id, foreignAlias: Obras }
+#    UDT: { local: udt_id, foreign: id, foreignAlias: Obras }
+#    Region: { local: region_id, foreign: id, foreignAlias: Obras }
+
+LineaObra:
+  columns:
+    obra_id: { type: integer }
+    ubicacion: { type: varchar(50) }
+    municipio_id: {type: integer }
+    udt_id: { type: integer }
+    descripcion: { type: text }
+    costo_tramo: { type: float }	
+  relations:
+    Municipio: { local: municipio_id, foreign: id, foreignAlias: LineasObras }
+    Udt: { local: udt_id, foreign: id, foreignAlias: LineasObras }
+    Obra: { onDelete: CASCADE, local: obra_id, foreign: id, foreignAlias: LineasObras}
+  

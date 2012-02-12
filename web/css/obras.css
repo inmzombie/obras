@@ -1,0 +1,17 @@
+#lineas_obras li{
+  list-style: none;
+  margin-right: 15px;
+}
+
+#sf_fieldset_lineas{
+  padding-top: 14px; 
+  padding-bottom: 14px; 
+  padding-left: 20px; 
+  padding-right: 20px;
+}
+.content_form{
+  width: 850px;	
+  position:fixed;
+  left:50%;
+  margin-left:-425px;
+}

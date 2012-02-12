@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           obra
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          obra
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        titulo_tipo_de_obra: { label: "Tipo de obra" }
+        titulo_estado_obra: { label: "Estado de obra" }
+      list:
+        title: 'Listado de Obras'
+        display: [nombre_obra, titulo_tipo_de_obra, titulo_estado_obra, presupuesto_oficial, monto_contrato,fecha_inicio, fecha_fin]
+      filter:  ~
+      form: 
+        display:
+          "Datos de obra": [nombre_obra, tipo_obra_id, estado_obra_id, detalle_obra]
+          "Financiamiento": [fuentefinanc_id, programa_id,  presupuesto_oficial]
+          "Datos de contratado": [empresa_id, monto_contrato]
+          "Datos responsable": [org_id]
+          "Plazos": [fecha_inicio, fecha_fin, plazo_ejecucion]
+      edit:
+        title: Editar Obra
+      new:
+        title: Nueva Obra
