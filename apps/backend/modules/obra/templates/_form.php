@@ -3,7 +3,7 @@
     <div class="sf_admin_form content_form">
         <?php echo form_tag_for($form, '@obra', array('id' => 'obra_form')) ?>
         <?php echo $form->renderHiddenFields(false) ?>
-
+        <h1>HOLa</h1>
         <?php if ($form->hasGlobalErrors()): ?>
         <?php echo $form->renderGlobalErrors() ?>
         <?php endif; ?>
