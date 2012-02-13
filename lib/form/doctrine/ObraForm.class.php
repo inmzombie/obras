@@ -156,23 +156,23 @@ class ObraForm extends BaseObraForm {
             $form = new LineaObraForm($linea_obra);
             $new_linea_obra->embedForm($i, $form);
         }
-        $this->embedForm('LineasObras', $new_linea_obra);
+        $this->embedForm('nueva_lin_obra', $new_linea_obra);
     }
 
     public function bind(array $taintedValues = null, array $taintedFiles = null) {
 
         $new_lineas_obras = new BaseForm();
-        foreach ($taintedValues['LineasObras'] as $key => $new_linea_obra) {
+        foreach ($taintedValues['nueva_lin_obra'] as $key => $new_linea_obra) {
             $linea_obra = new LineaObra();
             $linea_obra->Obra = $this->getObject();
             $form = new LineaObraForm($linea_obra);
             $new_lineas_obras->embedForm($key, $form);
         }
 
-        $this->embedForm('LineasObras', $new_lineas_obras);
+        $this->embedForm('nueva_lin_obra', $new_lineas_obras);
 
         parent::bind($taintedValues, $taintedFiles);
     }
-    
+
 
 }

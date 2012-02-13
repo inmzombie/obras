@@ -23,16 +23,16 @@ class Obra extends BaseObra {
     public function save(Doctrine_Connection $conn = null) {
         $user_id = sfContext::getInstance()->getUser()->getGuardUser()->getId();
         $groups = sfContext::getInstance()->getUser()->getGuardUser()->getGroups();
-        if($this->isNew()){
+        if ($this->isNew()) {
             $this->setCreacion($user_id);
             $this->setOrganizacion($groups[0]->getId());
-        } else {
+        }
 //            $this->setCreacion($this->getCreacion());
 //            $this->setOrganizacion($this->getOrganizacion());
-            echo $this->getCreacion();
-            echo $this->getOrganizacion();
-            die;
-
+//            echo $this->getCreacion();
+//            echo $this->getOrganizacion();
+//            die;
+        if ($this->isModified()) {
             $this->setEdicion($user_id);
         }
 //        if ($this->getOrganizacion()==null) {
@@ -40,6 +40,5 @@ class Obra extends BaseObra {
 //        }
         return parent::save($conn);
     }
-
 
 }

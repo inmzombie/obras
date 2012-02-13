@@ -8,8 +8,8 @@ function setUdt(municipio_id,num_lin){
         async: false,
         dataType:'json',
         success: function(datos, textStatus) {
-            $('#obra_LineasObras_'+num_lin+'_udt_id option[value='+ datos.udt_id+']').attr('selected', 'selected');
-            alert('#obra_LineasObras_'+num_lin+'_udt_id option[value='+ datos.udt_id+']');
+            $('#obra_nueva_lin_obra_'+num_lin+'_udt_id option[value='+ datos.udt_id+']').attr('selected', 'selected');
+            alert('#obra_nueva_lin_obra_'+num_lin+'_udt_id option[value='+ datos.udt_id+']');
         }
     });
 }

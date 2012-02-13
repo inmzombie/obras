@@ -30,23 +30,23 @@
                         <ul id="lineas_obras" class="lista_linea">
                             <li>
                             <tr>
-                            <?php echo $form['LineasObras'][0]['ubicacion']->renderError() ?>
-                            <?php echo $form['LineasObras'][0]['ubicacion']->render() ?>
+                            <?php echo $form['nueva_lin_obra'][0]['ubicacion']->renderError() ?>
+                            <?php echo $form['nueva_lin_obra'][0]['ubicacion']->render() ?>
 
-                            <?php echo $form['LineasObras'][0]['provincia_list']->renderError() ?>
-                            <?php echo $form['LineasObras'][0]['provincia_list']->render() ?>
+                            <?php echo $form['nueva_lin_obra'][0]['provincia_list']->renderError() ?>
+                            <?php echo $form['nueva_lin_obra'][0]['provincia_list']->render() ?>
 
-                            <?php echo $form['LineasObras'][0]['municipio_id']->renderError() ?>
-                            <?php echo $form['LineasObras'][0]['municipio_id']->render(array('onblur' => "setUdt(document.getElementById('obra_LineasObras_0_municipio_id').value,0)")) ?>
+                            <?php echo $form['nueva_lin_obra'][0]['municipio_id']->renderError() ?>
+                            <?php echo $form['nueva_lin_obra'][0]['municipio_id']->render(array('onblur' => "setUdt(document.getElementById('obra_nueva_lin_obra_0_municipio_id').value,0)")) ?>
 
-                            <?php echo $form['LineasObras'][0]['udt_id']->renderError() ?>
-                            <?php echo $form['LineasObras'][0]['udt_id']->render() ?>
+                            <?php echo $form['nueva_lin_obra'][0]['udt_id']->renderError() ?>
+                            <?php echo $form['nueva_lin_obra'][0]['udt_id']->render() ?>
 
-                            <?php echo $form['LineasObras'][0]['costo_tramo']->renderError() ?>
-                            <?php echo $form['LineasObras'][0]['costo_tramo']->render(array('onchange' => "actualiza()")) ?>
+                            <?php echo $form['nueva_lin_obra'][0]['costo_tramo']->renderError() ?>
+                            <?php echo $form['nueva_lin_obra'][0]['costo_tramo']->render(array('onchange' => "actualiza()")) ?>
 
-                            <?php echo $form['LineasObras'][0]['descripcion']->renderError() ?>
-                            <?php echo $form['LineasObras'][0]['descripcion']->render() ?>
+                            <?php echo $form['nueva_lin_obra'][0]['descripcion']->renderError() ?>
+                            <?php echo $form['nueva_lin_obra'][0]['descripcion']->render() ?>
 
                         <a id="addnewline" href="#"><?php echo image_tag('new.png') ?></a>
                         </tr>
@@ -65,7 +65,7 @@
                             <?php echo $linea_obra['provincia_list']->render() ?>
 
                             <?php echo $linea_obra['municipio_id']->renderError() ?>
-                            <?php echo $linea_obra['municipio_id']->render(array('onblur' => "setUdt(document.getElementById('obra_LineasObras_{$key}_municipio_id').value,{$key})")) ?>
+                            <?php echo $linea_obra['municipio_id']->render(array('onblur' => "setUdt(document.getElementById('obra_nueva_lin_obra_{$key}_municipio_id').value,{$key})")) ?>
 
 
                             <?php echo $linea_obra['udt_id']->renderError() ?>

@@ -7,4 +7,4 @@ editSuccess:
   metas:
     title: Editar Obra
   stylesheets: [ formation.css, obras.css ]
-  javascripts: [ lineasObrasForm.js, tabs_obras.js, ajaxMunicipioUdt.js, formation.js, fuente_finac_form, programa_form.js, tipo_obra_form.js, empresa_form.js, organismo_form.js, vanadium.js, actualiza_monto.js,jquery.ui.datepicker.validation.js ]
+  javascripts: [ lineasObrasForm.js, tabs_obras.js, ajax_municipio_udt, formation.js, fuente_finac_form, programa_form.js, tipo_obra_form.js, empresa_form.js, organismo_form.js, vanadium.js, actualiza_monto.js,jquery.ui.datepicker.validation.js ]
