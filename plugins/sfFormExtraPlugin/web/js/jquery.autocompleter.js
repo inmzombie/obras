@@ -254,7 +254,7 @@ $.Autocompleter = function(input, options) {
 			$input.addClass(options.loadingClass);
 			if (!options.matchCase)
 				currentValue = currentValue.toLowerCase();
-                            id_prov=$('#obra_nueva_lin_obra_0_provincia_list').val();
+                            id_prov=$('#obra_LineasObras_0_provincia_list').val();
 			request(currentValue, receiveData, hideResultsNow,id_prov);
 		} else {
 			stopLoading();

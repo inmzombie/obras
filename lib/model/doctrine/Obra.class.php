@@ -15,20 +15,31 @@ class Obra extends BaseObra {
     public function getTituloTipoDeObra() {
         return $this->getTipoDeObra()->getDescripcion();
     }
+
     public function getTituloEstadoObra() {
         return $this->getEstadoDeObra()->getEstadoDeObra();
     }
 
     public function save(Doctrine_Connection $conn = null) {
         $user_id = sfContext::getInstance()->getUser()->getGuardUser()->getId();
-        if (is_null($this->getCreacion())) {
+        $groups = sfContext::getInstance()->getUser()->getGuardUser()->getGroups();
+        if($this->isNew()){
             $this->setCreacion($user_id);
+            $this->setOrganizacion($groups[0]->getId());
+        } else {
+//            $this->setCreacion($this->getCreacion());
+//            $this->setOrganizacion($this->getOrganizacion());
+            echo $this->getCreacion();
+            echo $this->getOrganizacion();
+            die;
+
+            $this->setEdicion($user_id);
         }
-        $this->setEdicion($user_id);
-        if (is_null($this->getOrganizacion())) {
-            $this->setCreacion($user_id);
-        }
-        parent::save($conn);
+//        if ($this->getOrganizacion()==null) {
+//
+//        }
+        return parent::save($conn);
     }
+
 
 }
