@@ -15,10 +15,7 @@ class ObraForm extends BaseObraForm {
          * unset fields
          */
         unset($this['created_at'],
-                $this['updated_at'],
-                $this['cracion'],
-                $this['eliminacion'],
-                $this['edicion']
+                $this['updated_at']
         );
 
 
@@ -116,6 +113,13 @@ class ObraForm extends BaseObraForm {
          * text area
          */
         $this->widgetSchema['detalle_obra'] = new sfWidgetFormTextarea();
+        /**
+         * set Hidden widgets
+         */
+        $this->widgetSchema['creacion'] = new sfWidgetFormInputHidden();
+        $this->widgetSchema['organizacion'] = new sfWidgetFormInputHidden();
+        $this->widgetSchema['edicion'] = new sfWidgetFormInputHidden();
+        $this->widgetSchema['eliminacion'] = new sfWidgetFormInputHidden();
         /**
          * Seteo de Labels
          */

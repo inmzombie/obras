@@ -26,13 +26,7 @@ class Obra extends BaseObra {
         if ($this->isNew()) {
             $this->setCreacion($user_id);
             $this->setOrganizacion($groups[0]->getId());
-        }
-//            $this->setCreacion($this->getCreacion());
-//            $this->setOrganizacion($this->getOrganizacion());
-//            echo $this->getCreacion();
-//            echo $this->getOrganizacion();
-//            die;
-        if ($this->isModified()) {
+        }else {
             $this->setEdicion($user_id);
         }
 //        if ($this->getOrganizacion()==null) {

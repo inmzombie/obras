@@ -1,6 +1,6 @@
 #lineas_obras li{
   list-style: none;
-  margin-right: 15px;
+/*  margin-right: 15px;*/
 }
 
 #sf_fieldset_lineas{
@@ -12,6 +12,6 @@
 .content_form{
   width: 850px;	
   position:fixed;
-  left:50%;
-  margin-left:-425px;
+/*  left:50%;
+  margin-left:-425px;*/
 }
